@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     
+    <style>
+        div{
+            background-color: rgb(219, 231, 231); 
+        }
+        table{
+            border: 1px solid grey;
+            background-color: rgb(219, 231, 231); 
+            
+        }
+        td{
+            border: 1px solid gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="width: 70%" ;margin:auto; max: width 600px;>
+        <h3>쇼핑몰 회원관리 ver 1.0</h3>
+        <form action="" >
+            <table>
+                <tr>
+                    <td colspan="5" >
+                       
+                        <button>회원등록</button>
+                        <button>회원목록조회/수정</button>
+                        <button>회원매출조회</button>
+                        <button>홈으로.</button>
+                        
+                    </td>
+
+                </tr>
+
+                <tr> 
+                    <td><label for="lblname" class="title mpt">회원번호</label ></td>
+                
+                    <td><input type="number" name="number" id="lblname"></td>
+                </tr>
+                <tr> 
+                    <td><label for="lblpass" class="title mpt">회원성명</label></td>
+                    <td><input type="text" name="name" minlength="3" id="lblpass"></td>
+                </tr>
+                <tr> 
+                    <td><label for="lblemail" class="title mpt">회원전화</label> </td>
+                    <td><input type="tel" name="tel" id="lblemail"></td>
+                </tr>
+                <tr> 
+                    <td><label for="lbladdr" class="title mpt">회원주소</label></td>
+                    
+                    <td><input type="adress" id="lbladdr" name="adress" class="title"></td>
+                </tr>
+                <tr> 
+                    <td><label for="lbldate" class="title mpt">가입일자</label> </td>
+                    <td><input type="date" name="email" id="lbldate"></td>
+                </tr>
+                <tr>
+                    <td><label for="lbladdr" class="title mpt">고객등급</label></td>
+                    <td>
+                       
+                        <select name="addr" id="lbladdr">
+                            <option value="vip">A</option>
+                            <option value="일반">B</option>
+                            <option value="직원" selected="selected">C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr> 
+                    <td><label for="lblcode" class="title mpt">도시코드</label> </td>
+                    <td><input type="email" name="email" id="lblcode"></td>
+                </tr>
+                <tr>
+                    <td><label for="" class="title mpt">성별</label> </td>
+                    <td>
+                      
+                        <input type="radio" name="gender" value="male" id="lblname">
+                        <label for="lblname" class="mpt">남자</label>
+                        
+                        <input type="radio" name="gender" value="female" id="lblname">
+                        <label for="lblname" class="mpt">여자</label>
+                        <input type="radio" name="gender" 
+                            checked="checked" value="unknown" >
+                        <label for="lblname" class="mpt">모름</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" >
+                      
+                        <button>등록</button>
+                        <button>조회</button>
+                        
+                    </td>
+
+                </tr>
+            </table>
+
+
+        </form>
+    </div>    
+
+    
+</body>
+</html>

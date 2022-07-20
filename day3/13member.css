@@ -1,0 +1,67 @@
+/* css 스타일을 별도 파일로 작성합니다
+-> 사용하는 html 문서에서는 link 태그로 이파일을 설정
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+*{
+    font-family: 'Gamja Flower', cursive;
+    font-size: medium;
+}
+table{
+    
+    
+    border-top: 3px solid grey;
+    border-bottom: 3px solid gray;
+}
+
+td{
+    padding: 10px;
+}
+ /* 색상 지정방법: 색이름 or rgb() 함수 or 16진수 */
+/* tr > td:nth-child(1){
+   
+    background-color:rgb(228, 156, 24);
+    color: white;
+    border-radius: 5px;
+    text-align: center;} */
+
+label.title{
+    background-color: #c67;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    /* 인라인요소는 너비가 적용 안됩니다. blcok 요소처럼 너비높이가 적용되게 display 변경 */
+    width: 80%;
+    display: inline-block;
+    padding: 10px;
+    
+}
+    button:hover{
+        background-color: rgb(75, 7, 52);
+    }
+    label.mpt{
+        cursor: pointer;
+    }
+
+    tr:last-child > td {
+        background-color: white;
+        text-align: center;
+    }
+input[type=text], input[type=password], input[type=email] {
+    width: 60%;
+}
+button{
+    padding: 7px 15px;
+    margin: 15px 7px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input,select{
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid gray;
+
+}
