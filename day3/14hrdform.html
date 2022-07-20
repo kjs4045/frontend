@@ -5,23 +5,32 @@
     <title>Document</title>
      
     <style>
+        h2{
+            text-align: center;
+        }
         div{
             background-color: rgb(219, 231, 231); 
         }
         table{
             border: 1px solid grey;
             background-color: rgb(219, 231, 231); 
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 500px;
             
         }
         td{
             border: 1px solid gray;
         }
-        
+        td:nth-child(1){
+        text-align: center;
+
+       }
     </style>
 </head>
 <body>
-    <div style="width: 70%" ;margin:auto; max: width 600px;>
-        <h3>쇼핑몰 회원관리 ver 1.0</h3>
+    <div >
+        <h2>쇼핑몰 회원관리 ver 1.0</h2>
         <form action="" >
             <table>
                 <tr>
@@ -73,23 +82,10 @@
                     <td><label for="lblcode" class="title mpt">도시코드</label> </td>
                     <td><input type="email" name="email" id="lblcode"></td>
                 </tr>
-                <tr>
-                    <td><label for="" class="title mpt">성별</label> </td>
-                    <td>
-                      
-                        <input type="radio" name="gender" value="male" id="lblname">
-                        <label for="lblname" class="mpt">남자</label>
-                        
-                        <input type="radio" name="gender" value="female" id="lblname">
-                        <label for="lblname" class="mpt">여자</label>
-                        <input type="radio" name="gender" 
-                            checked="checked" value="unknown" >
-                        <label for="lblname" class="mpt">모름</label>
-                    </td>
-                </tr>
+                
                 
                 <tr>
-                    <td colspan="2" >
+                    <td colspan="2" style="text-align: center">
                       
                         <button>등록</button>
                         <button>조회</button>
